@@ -1,0 +1,30 @@
+.content--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+.story--container{
+    width: 50vw;
+}
+.story{
+    font-family: "Freeman";
+    color: #d9d6d6;
+    font-size: 1.4rem;
+}
+.photos{
+    width: 600px;
+    border-radius: 2rem;
+    overflow-x: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 1250px){
+    .story--container{
+        width: 90vw;
+        margin-top: 2rem;
+    }
+}

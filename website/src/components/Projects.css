@@ -1,0 +1,50 @@
+p{
+    margin-top: 0.5rem;
+    font-family: 'Freeman';
+    color: #d9d6d6;
+    font-size: 1.2rem;
+}
+span{
+    color:#ffc300;;
+}
+.projects--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 7vw 0 7vw;
+    
+}
+.video--container{
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-auto-rows: minmax(50vh, auto);
+    gap: 3rem;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.videos{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+@media(max-width: 996px){
+    .video--container{
+        grid-template-columns: repeat(1,60vw);
+    }
+}
+
+@media(max-width: 832px) {
+    .video--container{
+        grid-template-columns: repeat(1,70vw);
+    }
+}
+
+@media(max-width: 675px) {
+    .video--container{
+        grid-template-columns: repeat(1,80vw);
+        grid-auto-rows: minmax(35vh, auto);
+    }
+}
