@@ -10,17 +10,17 @@ export default function Navbar(props) {
     }
 
     const handleLinkedinClick = () => {
-        window.open('https://www.linkedin.com/in/dev-agarwal-k/','_blank');
-        toggleSideBar()
-    }
-
-    const handleGitClick = () => {
-        window.open('https://github.com/dev0508','_blank');
+        window.open('https://www.linkedin.com/in/dev-agarwal-173022259/','_blank');
         toggleSideBar()
     }
 
     const handleResumeClick = () => {
         window.open(resume,'_blank')
+        toggleSideBar()
+    }
+
+    const handleGitClick = () => {
+        window.open('https://github.com/dev0508','_blank');
         toggleSideBar()
     }
 
@@ -44,7 +44,7 @@ export default function Navbar(props) {
                         </div>
                     </div>
                     <div className="nav--right">
-                        <h2 className="personal--pages click" onClick={() => props.tabChange(1)}>Projects</h2>
+                        {/* <h2 className="personal--pages click" onClick={() => props.tabChange(1)}>Projects</h2> */}
                         <h2 className="personal--pages click" onClick={() => props.tabChange(2)}>Art Work</h2>
                         <h2 className="personal--pages click" onClick = {handleResumeClick}>Resume</h2>
                         <a className="email--container nav--containers click" href="mailto:dev.agarwal@mail.utoronto.ca">
@@ -71,7 +71,7 @@ export default function Navbar(props) {
                             <i className="fa-solid fa-envelope email icon--right"></i>
                             <h2 className="personal--pages">Email</h2>
                         </a>
-                        <div className="git--container nav--containers click">
+                        <div className="git--container nav--containers click" onClick={handleGitClick}>
                             <i className="fa-brands fa-github git icon--right"></i>
                             <h2 className="personal--pages">GitHub</h2>
                         </div>
